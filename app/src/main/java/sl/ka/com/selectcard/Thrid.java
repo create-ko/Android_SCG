@@ -201,8 +201,8 @@ public class Thrid extends AppCompatActivity implements View.OnClickListener {
         int num1=0, num2=0;
         num1 = UserName.getInstacne().getUser1_num2() + (int)UserName.getInstacne().getUser1_time2();
         num2 = UserName.getInstacne().getUser2_num2() + (int)UserName.getInstacne().getUser2_time2();
-        UserName.getInstacne().setUser1_total(num1);
-        UserName.getInstacne().setUser2_total(num2);
+        UserName.getInstacne().setUser1_sum2(num1);
+        UserName.getInstacne().setUser2_sum2(num2);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("승자는?");
         builder.setMessage("사용자 이름 : " + UserName.getInstacne().getUser1() +"\n클릭횟수 : " + UserName.getInstacne().getUser1_num2() +

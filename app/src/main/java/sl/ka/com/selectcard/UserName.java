@@ -13,7 +13,57 @@ public class UserName {
     private long user1_time1, user1_time2, user1_time3;  //1, 2, 3게임 클리어시간
     private long user2_time1, user2_time2, user2_time3;  //1, 2, 3게임 클리어시간
     private static UserName instacne = new UserName();
-    private int user1_total=0, user2_total=0;
+    private int user1_total=0, user2_total=0;               //총점수 비교하기 위한 변수
+    private int user1_sum1=0, user1_sum2=0,user1_sum3=0;    //1,2,3게임 총 점수
+    private int user2_sum1=0, user2_sum2=0,user2_sum3=0;    //1,2,3게임 총 점수
+
+    public int getUser1_sum1() {
+        return user1_sum1;
+    }
+
+    public int getUser1_sum2() {
+        return user1_sum2;
+    }
+
+    public int getUser1_sum3() {
+        return user1_sum3;
+    }
+
+    public int getUser2_sum1() {
+        return user2_sum1;
+    }
+
+    public void setUser1_sum1(int user1_sum1) {
+        this.user1_sum1 = user1_sum1;
+    }
+
+    public int getUser2_sum2() {
+        return user2_sum2;
+    }
+
+    public void setUser1_sum2(int user1_sum2) {
+        this.user1_sum2 = user1_sum2;
+    }
+
+    public void setUser1_sum3(int user1_sum3) {
+        this.user1_sum3 = user1_sum3;
+    }
+
+    public void setUser2_sum1(int user2_sum1) {
+        this.user2_sum1 = user2_sum1;
+    }
+
+    public int getUser2_sum3() {
+        return user2_sum3;
+    }
+
+    public void setUser2_sum2(int user2_sum2) {
+        this.user2_sum2 = user2_sum2;
+    }
+
+    public void setUser2_sum3(int user2_sum3) {
+        this.user2_sum3 = user2_sum3;
+    }
 
     public int getUser1_total() {
         return user1_total;
@@ -24,7 +74,7 @@ public class UserName {
     }
 
     public void setUser1_total(int user1_total) {
-        this.user1_total += user1_total;
+        this.user1_total = user1_total;
     }
 
     public void setUser2_total(int user2_total) {

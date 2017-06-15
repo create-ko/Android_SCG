@@ -45,14 +45,17 @@ public class Five extends AppCompatActivity {
         tx2_num2.setText(Integer.toString(UserName.getInstacne().getUser2_num2()+(int)UserName.getInstacne().getUser2_time2()));
         tx2_num3.setText(Integer.toString(UserName.getInstacne().getUser2_num3()+(int)UserName.getInstacne().getUser2_time3()));
 
+        UserName.getInstacne().setUser1_total(UserName.getInstacne().getUser1_sum1()+UserName.getInstacne().getUser1_sum2()+UserName.getInstacne().getUser1_sum3());
+        UserName.getInstacne().setUser2_total(UserName.getInstacne().getUser2_sum1()+UserName.getInstacne().getUser2_sum2()+UserName.getInstacne().getUser2_sum3());
+
         System.out.println(UserName.getInstacne().getUser1_total());
         System.out.println(UserName.getInstacne().getUser2_total());
 
 
-        tx_total.setText(UserName.getInstacne().getUser1_total()>UserName.getInstacne().getUser2_total()?
-                (UserName.getInstacne().getUser1_total())-(UserName.getInstacne().getUser2_total())+" 점 차이로" +
+        tx_total.setText(UserName.getInstacne().getUser1_total()<UserName.getInstacne().getUser2_total()?
+                UserName.getInstacne().getUser2_total()-UserName.getInstacne().getUser1_total()+" 점 차이로" +
                 UserName.getInstacne().getUser1()+" 이 승리하셨습니다!":
-                (UserName.getInstacne().getUser2_total())-(UserName.getInstacne().getUser1_total())+" 점 차이로" +
+                UserName.getInstacne().getUser1_total()-UserName.getInstacne().getUser2_total()+" 점 차이로" +
                 UserName.getInstacne().getUser2()+" 이 승리하셨습니다!");
     }
 }

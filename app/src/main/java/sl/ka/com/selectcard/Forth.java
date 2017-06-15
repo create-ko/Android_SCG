@@ -199,8 +199,8 @@ public class Forth extends AppCompatActivity implements View.OnClickListener {
         int num1=0, num2=0;
         num1 = UserName.getInstacne().getUser1_num3() + (int)UserName.getInstacne().getUser1_time3();
         num2 = UserName.getInstacne().getUser2_num3() + (int)UserName.getInstacne().getUser2_time3();
-        UserName.getInstacne().setUser1_total(num1);
-        UserName.getInstacne().setUser2_total(num2);
+        UserName.getInstacne().setUser1_sum3(num1);
+        UserName.getInstacne().setUser2_sum3(num2);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Finish");
         builder.setMessage("게임이 끝났습니다. \n최종 승자를 확인 하시겠습니까?");

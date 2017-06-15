@@ -193,8 +193,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="30dp"
-            android:text="TextView"
+            android:gravity="center_vertical"
             android:textAlignment="center"
             android:textColor="#FF0000"
             android:textSize="20dp" />

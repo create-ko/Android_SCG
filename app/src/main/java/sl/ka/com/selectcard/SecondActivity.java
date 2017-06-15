@@ -208,8 +208,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         int num1=0, num2=0;
         num1 = UserName.getInstacne().getUser1_num1() + (int)UserName.getInstacne().getUser1_time1();
         num2 = UserName.getInstacne().getUser2_num1() + (int)UserName.getInstacne().getUser2_time1();
-        UserName.getInstacne().setUser1_total(num1);
-        UserName.getInstacne().setUser2_total(num2);
+        UserName.getInstacne().setUser1_sum1(num1);
+        UserName.getInstacne().setUser2_sum1(num2);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("승자는?");
         builder.setMessage("사용자 이름 : " + UserName.getInstacne().getUser1() +"\n클릭횟수 : " + UserName.getInstacne().getUser1_num1() +
